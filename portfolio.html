@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -21,15 +23,21 @@
     <header class="header">
       <div class="container header-box">
         <nav class="header-nav">
-          <a class="logo logo-header" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo logo-header" href="./index.html"
+            ><span>Web</span>Studio</a
+          >
           <ul class="nav-list">
             <li class="header-item">
               <a class="header-link" href="./index.html">Студія</a>
             </li>
             <li class="header-item">
-              <a class="header-link current-page" href="./portfolio.html">Портфоліо</a>
+              <a class="header-link current-page" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
-            <li class="header-item"><a class="header-link" href="#">Контакти</a></li>
+            <li class="header-item">
+              <a class="header-link" href="#">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-list">
@@ -78,13 +86,23 @@
           <ul class="card-list">
             <li class="card-item">
               <a class="card-link" href="#">
-                <img
-                  class="card-image"
-                  src="./images/portfolio/technocriack.jpg"
-                  alt="ноутбук с изображением сайта"
-                  width="370"
-                  height="294"
-                />
+                <div class="card-thumb">
+                  <div class="card-overlay">
+                    <p class="card-actions">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <img
+                    class="card-image"
+                    src="./images/portfolio/technocriack.jpg"
+                    alt="ноутбук с изображением сайта"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="card-box">
                   <h2 class="card-header">Технокряк</h2>
                   <p class="card-text">Веб-сайт</p>
@@ -218,7 +236,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container logo-wraper">
-        <div class="">
+        <div class="logo-address">
           <a class="logo logo-footer" href="#"><span>Web</span>Studio</a>
           <address class="address">
             <ul class="footer-list">
@@ -297,7 +315,37 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <h3 class="footer-socials-heading">Підпишіться на розсилку</h3>
+          <form class="subscription-form">
+            <label for="user_email"></label>
+            <input
+              class="subscription-input"
+              type="email"
+              name="subscriber-email"
+              id="user_email"
+              placeholder="E-mail"
+            />
+            <button class="subscription-btn" type="submit">
+              Підписатися
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/icon.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>
