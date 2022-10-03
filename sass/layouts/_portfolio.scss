@@ -23,7 +23,8 @@
   transition-timing-function: var(--transition-timing-function);
 }
 
-.card-link:hover .card-overlay {
+.card-link:hover .card-overlay,
+.card-link:focus .card-overlay {
   transform: translateY(0%);
 }
 
